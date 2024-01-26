@@ -31,7 +31,7 @@ const CartPage = () => {
         }
 
         { products.map((item, index) => (
-         <div className="flex items-center justify-between mb-4">
+         <div key={ item.id } className="flex items-center justify-between mb-4">
          <Image src={ item.img ? item.img : "/images/burger.png" } alt="" width={100} height={100} />
          <div className="">
            <h1 className="uppercase text-xl font-bold">{ item.title }</h1>
