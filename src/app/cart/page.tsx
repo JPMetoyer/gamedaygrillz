@@ -26,7 +26,7 @@ const CartPage = () => {
           products.length == 0 &&
           <>
             <h1 className="text-2xl text-center uppercase p-4 md:p-5 md:text-3xl xl:text-4xl">No items in cart</h1>
-            <Link style={{ maxWidth: "max-content", margin: "0px auto" }} className="p-3 rounded bg-red-500 text-white justify-self-center" href={ "/menu" }>Add Items</Link>
+            <Link style={{ maxWidth: "max-content", margin: "0px auto" }} className="p-3 rounded bg-red-500 text-white justify-self-center" href={ "/menu/burger" }>Add Items</Link>
           </>
         }
 

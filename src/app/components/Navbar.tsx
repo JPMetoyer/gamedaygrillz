@@ -56,16 +56,9 @@ const Navbar = () => {
             </Link>
 
             <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
-            
             <Image src="images/menuicon.svg"  alt="icon of menu button" width={50} height={50}/>
-        </button>
+            </button>
           </div>
-
-
-
-
-
-
 
 
 

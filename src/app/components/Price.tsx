@@ -1,6 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { CartContext } from "@/utilities/cart";
+import { singleProduct } from "@/utilities/data";
+import React, { useContext, useEffect, useState } from "react";
 
 type Props = {
   price: number;
@@ -12,6 +14,8 @@ const Price = ({ price, id, options }: Props) => {
   const [total, setTotal] = useState(price);
   const [quantity, setQuantity] = useState(1);
   const [selected, setSelected] = useState(0);
+
+  const { editCart } = useContext(CartContext);
 
   useEffect(() => {
     setTotal(
@@ -58,7 +62,7 @@ const Price = ({ price, id, options }: Props) => {
           </div>
         </div>
         {/* CART BUTTON */}
-        <button className="uppercase w-56 bg-red-500 text-white p-3 ring-1 ring-red-500">
+        <button onClick={() => editCart(singleProduct)} className="uppercase w-56 bg-red-500 text-white p-3 ring-1 ring-red-500">
           Add to Cart
         </button>
       </div>
