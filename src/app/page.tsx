@@ -25,7 +25,7 @@ export default function Home() {
          Great Grillz & Glory at Game Day Grill
         </h1>
 
-        <p>Welcome to Game Day Grill, where every meal is a touchdown of taste! Experience the ultimate blend of gourmet burgers, crafted with the freshest ingredients, in a vibrant, sports-themed ambiance. At Game Day Grill, we're not just serving food; we're creating an unforgettable dining adventure, perfect for both the casual diner and the sports enthusiast alike. Join us and savor the victory of flavor on your plate!</p>
+        <p>Welcome to Game Day Grill, where every meal is a touchdown of taste! Experience the ultimate blend of gourmet burgers, crafted with the freshest ingredients, in a vibrant, sports-themed ambiance. At Game Day Grill, we&apos;re not just serving food; we&apos;re creating an unforgettable dining adventure, perfect for both the casual diner and the sports enthusiast alike. Join us and savor the victory of flavor on your plate!</p>
         </div>
       </section>
 
