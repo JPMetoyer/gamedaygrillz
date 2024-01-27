@@ -25,7 +25,7 @@ const CategoryPage = () => {
           <div className="flex items-center justify-between font-bold">
             <h1 className="text-2xl uppercase p-2">{item.title}</h1>
             <h2 className="group-hover:hidden text-xl">${item.price}</h2>
-            <button onClick={ () => editCart(item) } className="hidden group-hover:block uppercase bg-red-500 text-white p-2 rounded-md">Add to Cart</button>
+            <button onClick={ (event) => { event.preventDefault(); editCart(item) }} className="hidden group-hover:block uppercase bg-red-500 text-white p-2 rounded-md">Add to Cart</button>
           </div>
         </Link>
       ))}

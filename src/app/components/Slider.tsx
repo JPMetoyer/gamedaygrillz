@@ -1,22 +1,23 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const data = [
   {
     id: 1,
-    title: "Gather 'Round for the Best Burgers & Sports Action at Game Day Grillz",
-    image: "/images/slide1.webp",
+    title: "Gather 'Round for the Best Burgers & Sports Action at Game Day Grill",
+    image: "/images/main.png",
   },
   {
     id: 2,
     title: "Home of the MVP (Most Valuable Patties)",
-    image: "/images/slide2.webp",
+    image: "/images/mvpburger.png",
   },
   {
     id: 3,
     title: "Touchdown Tastes in Every Burger ",
-    image: "/images/slide3.webp",
+    image: "/images/touchdown.png",
   },
 ];
 
@@ -39,7 +40,13 @@ const Slider = () => {
         <h1 className="text-5xl text-center uppercase p-4 md:p-10 md:text-6xl xl:text-7xl">
           {data[currentSlide].title}
         </h1>
-        <button className="bg-red-500 text-white py-4 px-8">Order Now</button>
+
+        <div style={{ display: "flex", gap: "1rem" }}>
+
+        <Link href="/menu/burgers" className="bg-red-500 text-white py-4 px-8">Order Now</Link>
+        <Link href="/reservation" className="bg-white text-red-500 py-4 px-8">Reserve a Table</Link>
+        </div>
+
       </div>
       {/* IMAGE CONTAINER */}
       <div className="w-full flex-1 relative">

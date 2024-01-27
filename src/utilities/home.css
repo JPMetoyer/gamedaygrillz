@@ -1,0 +1,17 @@
+
+section#about {
+    height: calc(100vh - 4rem);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem 1rem;
+    
+    
+    @media screen and (max-width: 840px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    };
+}
+  
+  

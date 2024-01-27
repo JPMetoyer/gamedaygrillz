@@ -50,6 +50,10 @@
     animation-duration: 0.5s;
     animation-fill-mode: both;
 
+    &.hidden {
+      display: none;
+    }
+
   }
 
   .animate-slideIn {
@@ -311,4 +315,17 @@
 .action:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+#cart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
   
+
+

@@ -1,9 +1,14 @@
+"use client";
+
 import Price from "../../components/Price";
 import { singleProduct } from "../../../utilities/data";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const SingleProductPage = () => {
+
+  const [add, setAdd] = useState(false);
+
   return (
     <div className="p-4 lg:px-20 xl:px-40 h-screen flex flex-col justify-around text-red-500 md:flex-row md:gap-8 md:items-center">
       {/* IMAGE CONTAINER */}
@@ -15,6 +20,16 @@ const SingleProductPage = () => {
             className="object-contain"
             fill
           />
+
+          {
+            add &&
+            <Image
+            src={singleProduct.img}
+            alt=""
+            className="object-contain"
+            fill
+            />
+          }
         </div>
       )}
       {/* TEXT CONTAINER */}

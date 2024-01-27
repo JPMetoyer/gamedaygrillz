@@ -4,7 +4,8 @@ import '../../app/styles.scss'
 const ReservationPage = () => {
   return (
 
-    <div className="wrapper h-screen">
+    <div className="wrapper h-screen mt-[20vh]">
+
     <div className="container mt-[20vh]">
       <div className="container-time">
         <h2 className="heading text-white">Time Open</h2>

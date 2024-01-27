@@ -24,7 +24,7 @@ const Navbar = () => {
         <Link href="/" className="flex flex-row items-center justify-center">
 
           <Image src="/images/grillicon.svg" alt=""  width={50} height={50}/>
-          <h3 className="text-[24px] text-[#9C34C2]">Game Day Grillz</h3>
+          <h3 className="text-[24px] text-[#9C34C2]">Game Day Grill</h3>
 
         </Link>
 
@@ -67,7 +67,7 @@ const Navbar = () => {
           <Link href="/" className="flex flex-row items-center justify-center">
 
             <Image src="/images/grillicon.svg" alt=""  width={50} height={50}/>
-            <h3 className="text-[20px] text-[#9C34C2]">Game Day Grillz</h3>
+            <h3 className="text-[20px] text-[#9C34C2]">Game Day Grill</h3>
 
           </Link>
 
