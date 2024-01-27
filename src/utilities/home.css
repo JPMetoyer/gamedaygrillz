@@ -6,12 +6,32 @@ section#about {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 1rem 1rem;
+
+    padding: 2rem 5vw;
     
     
     @media screen and (max-width: 840px) {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
     };
+}
+
+section#about div.graphic {
+  padding: 2rem;
+}
+
+section#about div.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 0px 3rem;
+}
+
+section#about div.content h1 {
+  text-align: left;
 }
   
   
